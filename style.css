@@ -10,6 +10,16 @@ body{
 .g{
     color:#FF42A5;
 }
+.center-section{
+    max-width: 1024px;
+    margin: 10px auto;
+}
+.section-color{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+button{
+    cursor: pointer;
+}
 /* header section */
 /* nav start */
 nav{
@@ -88,18 +98,75 @@ nav{
     font-weight: 500;
 }
 /* nav finish */
-
-
+/* banner start */
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.banner-title{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+}
+.banner-header{
+    font-size: 95px;
+    font-weight: 800;
+    color: #CC4FCC;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.banner-description{
+    color: #534C64;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.banner-img{
+    width: 500px;
+}
+.banner-btns{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+    
+}
+.banner-btn-1{
+    margin: 15px 0px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    background:linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+}
+.banner-btn-2{
+    margin: 15px 0px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    background:#4EC5F7;
+}
 
 /* responsive  */
 /* mobile */
 @media screen and (max-width:576px) {
-    .nav-container, .nav-list ul{
+    .nav-container, .nav-list ul,.banner-btns{
         flex-direction: column;
     }
     .nav-container .nav-logo{
         margin-top: 20px;
     }
+
 }
 /* tablet */
 @media screen and (min-width:576px) and (max-width:992px) {
