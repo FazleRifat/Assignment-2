@@ -13,15 +13,19 @@ body{
 /* header section */
 /* nav start */
 nav{
-    background: #FFF;
+    background: #fff;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     height: 90px;
     align-items: center;
+    margin-top: 0px;
+    padding: 0%;
 }
 .nav-container{
     max-width: 1024px;
     max-height: 70px ;
-    margin: 20px auto;
+    margin: 0px auto;
+    position: relative;
+    top: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -93,8 +97,8 @@ nav{
     .nav-container, .nav-list ul{
         flex-direction: column;
     }
-    .nav-container{
-        margin-top: 50px;
+    .nav-container .nav-logo{
+        margin-top: 20px;
     }
 }
 /* tablet */
@@ -104,7 +108,9 @@ nav{
         padding: 0px;
     }
     .nav-container{
-        margin: 30px 20px;
+        margin: 0px;
         padding: 0px;
+        position: relative;
+        left: 10px;
     }
 }
