@@ -189,6 +189,8 @@ nav{
     padding: 30px;
     align-items: center;
     gap: 20px;
+    width: 900px;
+    margin: 0 auto;
 }
 .our-description{
     color: #534C64;
@@ -368,9 +370,35 @@ footer{
 /* responsive  */
 /* mobile */
 @media screen and (max-width:576px)  {
-    .nav-container,.nav-list ul,.banner-container,.our-cards,.service-banner{
+    .nav-container,.nav-list ul,.banner-container,.our-cards{
         flex-direction: column;
+        margin: 20px auto;
     }
-    
+    .service-banner{
+        flex-direction: column-reverse;
+        width: 400px;
+        margin: 0px auto;
+        padding: 0px;
+    }
+    .nav-list{
+        margin-top: 20px;
+    }
+   .our-cards{
+    margin: 0px auto;
+    padding: 0px;
+    width: 240px;
+   }
+   .service-banner img{
+    width: 400px;
+    margin: 0px auto;
+    padding: 0px;
+   }
+   .angela{
+    width: 100px;
+    height: 300px;
+   }
+   footer{
+    width: 400px;
+    height: 60vh;
+   }
 }
-/* tablet */
