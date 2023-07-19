@@ -25,32 +25,25 @@ button{
 nav{
     background: #fff;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
-    height: 90px;
-    align-items: center;
-    margin-top: 0px;
-    padding: 0%;
+    padding: 20px;
 }
 .nav-container{
-    max-width: 1024px;
-    max-height: 70px ;
-    margin: 0px auto;
-    position: relative;
-    top: 15px;
+    min-height: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    height: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+    
 }
 .nav-logo{
     display: flex;
-    justify-content: center;
-    gap:20px;
+    width: 50%;
     
 }
 .nav-logo-img{
-    width: 100%;
-    object-fit: cover;
+    width: 80px;
+    object-fit:cover;
+    margin-right: 20px;
 }
 .nav-title{
     font-size: 30px;
@@ -59,16 +52,16 @@ nav{
     line-height: normal;
 }
 .nav-list{
-    margin: 54px 0px;
-    text-align: center;
-    padding: 20px;
-    
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .nav-list ul{
     display: flex;
     gap:32px;
     align-items: center;
-    margin-right: 0px;
+    justify-content: space-between;
 }
 .nav-list li{
     list-style: none;
@@ -91,6 +84,7 @@ nav{
     background: rgba(11, 2, 35, 0.10);
     padding: 15px;
     margin-right: 0px;
+    text-align: center;
 }
 .follow{
     color: #3C354F;
@@ -156,28 +150,43 @@ nav{
     font-weight: 600;
     background:#4EC5F7;
 }
+.second-banner{
+    flex-direction: row-reverse;
 
+}
+.second-banner .banner-text{
+    text-align: right;
+}
+.second-banner .banner-description{
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+}
+.b{
+    font-weight: 700;
+}
 /* responsive  */
 /* mobile */
 @media screen and (max-width:576px) {
     .nav-container, .nav-list ul,.banner-btns{
         flex-direction: column;
     }
-    .nav-container .nav-logo{
-        margin-top: 20px;
-    }
-
-}
-/* tablet */
-@media screen and (min-width:576px) and (max-width:992px) {
     nav{
-        margin: 0px;
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+    }
+    .nav-container,.nav-logo{
+        margin:20px 0px;
         padding: 0px;
     }
-    .nav-container{
+    .nav-list{
+        flex-direction: column;
         margin: 0px;
         padding: 0px;
-        position: relative;
-        left: 10px;
+        width: 100%;
     }
-}
+}   
+/* tablet */
