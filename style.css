@@ -189,7 +189,6 @@ nav{
     padding: 30px;
     align-items: center;
     gap: 20px;
-    margin: 10px auto;
 }
 .our-description{
     color: #534C64;
@@ -200,13 +199,49 @@ nav{
 .card-img{
     width: 200px;
     margin: 0px;
+    display: block;
 }
+.card-container{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0px auto;
+}
+.overlay{
+    text-align: center;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    margin-right: 20px;
+    opacity: 0;
+    
+}
+.card-container:hover .overlay{
+    opacity: 1;
+}
+.play{
+    color:#CC4FCC;
+}
+.play-icon{
+    width:100px;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .card-description{
     color: #534C64;
     font-size: 16px;
     font-weight: 500;
     line-height: 30px; /* 150% */
 }
+
 /* service */
 .service-banner{
     display: flex;
@@ -332,5 +367,10 @@ footer{
 }
 /* responsive  */
 /* mobile */
-
+@media screen and (max-width:576px)  {
+    .nav-container,.nav-list ul,.banner-container,.our-cards,.service-banner{
+        flex-direction: column;
+    }
+    
+}
 /* tablet */
